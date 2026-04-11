@@ -12,9 +12,10 @@ import { StudentModule } from './student/student.module';
 import { BookModule } from './book/book.module';
 import { BookController } from './book/book.controller';
 import { BookService } from './book/book.service';
+import { CustomerModule } from './customer/customer.module';
 
 @Module({
-  imports: [EmployeeModule, CategoryModule, StudentModule, BookModule],
+  imports: [EmployeeModule, CategoryModule, StudentModule, BookModule, CustomerModule],
   controllers: [AppController, UserController,  ProductController,BookController],
   providers: [AppService, ProductService,BookService],
 })
