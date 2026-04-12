@@ -13,10 +13,12 @@ import { BookModule } from './book/book.module';
 import { BookController } from './book/book.controller';
 import { BookService } from './book/book.service';
 import { CustomerModule } from './customer/customer.module';
+import { MynameController } from './myname/myname.controller';
+import { UserRolesController } from './user-roles/user-roles.controller';
 
 @Module({
   imports: [EmployeeModule, CategoryModule, StudentModule, BookModule, CustomerModule],
-  controllers: [AppController, UserController,  ProductController,BookController],
+  controllers: [AppController, UserController,  ProductController,BookController, MynameController, UserRolesController],
   providers: [AppService, ProductService,BookService],
 })
 export class AppModule {}
